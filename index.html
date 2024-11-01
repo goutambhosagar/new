@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goutam Bhosagar Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar" >
+        <a href="#" class="logo">Portfolio</a>
+        <ul id="sidemenu">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    
+    <section class="home" id="home">
+        <div class="home-info">
+            <h1>Goutam Bhosagar</h1>
+            <h2>I'm a Web Developer Ui/Ux</h2>
+            <p>Hello! I'm Goutam Bhosagar, a passionate software developer and tech enthusiast. With a strong background in creating dynamic web applications and a keen interest in new technologies, I strive to build solutions that make a difference. This webpage serves as a gateway to my portfolio, professional network, and contact information. Feel free to explore my work and get in touch!</p>
+            <div class="btn-sci">
+                <a href="#" class="btn">Contact Us</a>
+                <div class="sci">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="goutam.png" alt="profile">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="about" id="about" >
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="goutam.png" alt="my profile">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a third-year B tech Computer Science Engineering student passionate about technology and innovation. I have completed internships in Java development at CTTC Bhubaneswar and AI, ML, and Data Analytics at IBM and AICTE Edunet Foundation. I am eager to apply my skills in real-world projects and contribute to impactful solutions.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                        <p class="tab-links" onclick="opentab(event, 'internship')">Internship</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Dynamic Web Application</li>
+                            <li><span>App Development</span><br>Building Android/iOS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Designing Web/App Interfaces</li>
+                            <li><span>2023 - Current</span><br>Dynamic Web Application</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - 2023</span><br>Diploma in Computer Science Engineering <br><a href="#">Vikash Polytechnic Bargarh</a></li>
+                            <li><span>2023 - 2026</span><br>Bachelor of Technology CSE <br><a href="#">Bhubaneswar Engineering College BBSR</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="internship">
+                        <ul>
+                            <li><span>1 month</span><br>Core Java <br><a href="#">CTTC bbsr</a></li>
+                            <li><span>1 month</span><br>Data Science / Data Analytics <br><a href="#">IBM</a></li>
+                            <li><span>1 month</span><br>AI & ML <br><a href="#">Edunet Foundation</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services" id="projects">
+        <div class="containers">
+            <h1 class="sub-title">Projects</h1>
+            <div class="services-list">
+                <div>
+                    <h2>You Tube Video Summarizers </h2>
+                    <p>This project allows users to input a YouTube video link and receive a concise summary of its content. It utilizes advanced natural language processing techniques to extract key points, making it easier for viewers to grasp the main ideas without watching the entire video. The application is built using Python and Flask, providing a user-friendly interface for seamless interaction.</p>
+                </div>
+                <div>
+                    <h2>Text-to-Speech Application</h2>
+                    <p>This project allows users to convert written text into speech. Users can input their text, and the application reads it aloud in a high-quality voice. The project is built using Python and various text-to-speech libraries, providing users with a smooth and interactive experience.</p>
+                </div>
+                <div>
+                    <h2>My Portfolio </h2>
+                    <p>My portfolio is a collection of various technical projects, including web development, app development, and machine learning projects. It showcases my technical skills and knowledge while providing detailed descriptions of the various works I've undertaken and their outcomes. This portfolio serves as an important platform to highlight my skills and experiences.</p>
+                </div>
+                
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+ <div id="contact" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Get In Touch</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>goutambhosagar08@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>6371864875</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                   
+                    
+                </div>
+                <a href="Goutam-Bhosagar.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+  
+    
+ </div>
+ 
+
+ <footer class="copy-right">
+    <p>© 2024 Goutam Bhosagar</p>
+</footer>
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(event, tabname) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script src="script.js"></script>
+    
+
+</body>
+</html>
